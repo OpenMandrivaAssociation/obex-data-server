@@ -1,5 +1,5 @@
 Name:		obex-data-server
-Version:	0.1
+Version:	0.2
 Release:	%mkrel 1
 Summary:	D-Bus service for Obex access
 
@@ -55,6 +55,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %doc README COPYING dbus-api.txt
 #test/ods-dbus-test.c test/ods-server-test.py test/ods-session-test.py
-%config %{_sysconfdir}/dbus-1/system.d/obex-data-server.conf
 %{_bindir}/obex-data-server
 %{_datadir}/dbus-1/services/obex-data-server.service
