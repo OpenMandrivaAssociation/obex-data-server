@@ -43,20 +43,20 @@ http://svn.muiline.com/cgi-bin/viewvc.cgi/obex-data-server/trunk/
 EOF
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 # FIXME files missing: http://bugs.muiline.com/view.php?id=42
 #chmod a-x test/*.py
 %makeinstall_std
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root,-)
-%doc README COPYING dbus-api.txt
+%doc AUTHORS ChangeLog NEWS README COPYING dbus-api.txt
 #test/ods-dbus-test.c test/ods-server-test.py test/ods-session-test.py
 %{_bindir}/obex-data-server
 %{_datadir}/dbus-1/services/obex-data-server.service
-%{_sysconfdir}/obex-data-server/*.xml
+%config %{_sysconfdir}/obex-data-server/*.xml
 %{_mandir}/man1/obex-data-server.1.*
 
