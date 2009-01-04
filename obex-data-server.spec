@@ -57,3 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 #test/ods-dbus-test.c test/ods-server-test.py test/ods-session-test.py
 %{_bindir}/obex-data-server
 %{_datadir}/dbus-1/services/obex-data-server.service
+%{_sysconfdir}/obex-data-server/*.xml
+%{_mandir}/man1/obex-data-server.1.*
+
