@@ -1,5 +1,5 @@
 Name:		obex-data-server
-Version:	0.4.2
+Version:	0.4.4
 Release:	%mkrel 1
 Summary:	D-Bus service for Obex access
 
@@ -12,7 +12,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root
 BuildRequires:	dbus-glib-devel
 BuildRequires:	bluez-devel
 BuildRequires:	openobex-devel
-BuildRequires:	glib2-devel
+BuildRequires:	gtk2-devel
+BuildRequires:	libusb-devel
 BuildRequires:	libtool
 
 %description
@@ -24,7 +25,7 @@ other Bluetooth-equipped devices.
 %setup -q
 
 %build
-%configure2_5x
+%configure2_5x --enable-bip=gdk-pixbuf
 %make
 
 cat << EOF > README
