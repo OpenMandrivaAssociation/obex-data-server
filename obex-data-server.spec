@@ -1,6 +1,6 @@
 Name:		obex-data-server
-Version:	0.4.4
-Release:	%mkrel 2
+Version:	0.4.5
+Release:	%mkrel 1
 Summary:	D-Bus service for Obex access
 
 Group:		System/Servers
