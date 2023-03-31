@@ -1,7 +1,7 @@
 Summary:	D-Bus service for Obex access
 Name:		obex-data-server
 Version:	0.4.6
-Release:	19
+Release:	20
 Group:		System/Servers
 License:	GPLv2+
 Url:		http://tadas.dailyda.com/blog
