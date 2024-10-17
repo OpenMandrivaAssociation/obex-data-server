@@ -4,7 +4,7 @@ Version:	0.4.6
 Release:	20
 Group:		System/Servers
 License:	GPLv2+
-Url:		http://tadas.dailyda.com/blog
+Url:		https://tadas.dailyda.com/blog
 Source0:	http://tadas.dailyda.com/software/%{name}-%{version}.tar.gz
 Patch0:		obex-data-server-0.4.6-build-fixes-1.patch
 
