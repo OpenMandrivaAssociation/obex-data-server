@@ -8,6 +8,11 @@ Url:		https://tadas.dailyda.com/blog
 Source0:	http://tadas.dailyda.com/software/%{name}-%{version}.tar.gz
 Patch0:		obex-data-server-0.4.6-build-fixes-1.patch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	libtool
 BuildRequires:	pkgconfig(bluez)
 BuildRequires:	pkgconfig(dbus-glib-1)
